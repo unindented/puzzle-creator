@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Puzzle</title>
+
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+
+  <script src="scripts/query.min.js"></script>
+
+  <script src="scripts/i18n.min.js"></script>
+
+  <script src="scripts/utils.min.js"></script>
+  <script src="scripts/puzzle.min.js"></script>
+ 
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/jquery-puzzle.min.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <div class="container">
+      <img id="image" style="display: none" src="loading.gif" />
+    </div>
+ 
+    <div id="dialog">
+      <div>
+        <div>
+          <form>
+            <!-- url param -->
+            <input id="url" name="url" type="hidden" />
+
+            <!-- rows param -->
+            <label for="rows" data-i18n="msg_rows"></label>
+            <span id="rowsvalue"></span>
+            <input id="rows" name="rows" type="range" />
+            <!-- col param -->
+            <label for="cols" data-i18n="msg_cols"></label>
+            <span id="colsvalue"></span>
+            <input id="cols" name="cols" type="range" />
+
+            <!-- submit (will disable itself after click) -->
+            <input type="submit" onclick="this.disabled = 'disabled'; this.form.submit(); return false;" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
+

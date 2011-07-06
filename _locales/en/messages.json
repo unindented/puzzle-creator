@@ -1,0 +1,54 @@
+{
+  "locale": {
+    "message": "en"
+  },
+  "ext_name": {
+    "message": "Puzzle for Chrome"
+  },
+  "ext_description": {
+    "message": "Creates a sliding puzzle from any image. Just right-click on the image and select the 'Puzzle for Chrome' option."
+  },
+
+  "menu_puzzle": {
+    "message": "Create puzzle from image"
+  },
+  "menu_puzzle_3x3": {
+    "message": "Create 3x3 puzzle"
+  },
+  "menu_puzzle_4x4": {
+    "message": "Create 4x4 puzzle"
+  },
+  "menu_puzzle_5x5": {
+    "message": "Create 5x5 puzzle"
+  },
+  "menu_puzzle_custom": {
+    "message": "Create custom puzzle..."
+  },
+
+  "msg_rows": {
+    "message": "Number of rows"
+  },
+  "msg_cols": {
+    "message": "Number of columns"
+  },
+
+  "msg_shuffle": {
+    "message": "Shuffle"
+  },
+  "msg_confirm_shuffle": {
+    "message": "Do you want to shuffle the pieces?"
+  },
+  "msg_numbers": {
+    "message": "Numbers"
+  },
+  "msg_original": {
+    "message": "Original"
+  },
+  "msg_moves": {
+    "message": "moves"
+  },
+  "msg_seconds": {
+    "message": "seconds"
+  }
+}
+

@@ -1,0 +1,221 @@
+/******************************************************************************
+ *
+ * Styles for the Puzzle for Chrome extension.
+ *
+ ******************************************************************************/
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Daniel';
+  src: local('☺'), url('daniel.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/******************************************************************************/
+
+/* Global styles */
+
+body {
+  background: #fff;
+  color: #000;
+  font: normal 14px/1.5 'Lucida Grande', 'Lucida Sans', 'Helvetica', 'Arial', sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/******************************************************************************/
+
+/* Puzzle */
+
+.puzzle {
+  background-color: #fff;
+  -webkit-border-radius: 1em;
+  -webkit-box-shadow: rgba(0,0,0,.25) 0 .15em 1em;
+  margin: 3em auto;
+  padding: 1em;
+  min-width: 666px;
+}
+
+.puzzle .wrapper {
+  margin: 0 auto;
+  padding: .5em;
+}
+
+.puzzle .background {
+  border: 1px solid #ddd;
+}
+
+/* Pieces */
+
+.puzzle .piece {
+  border: 1px solid #ddd;
+  color: #fff;
+  cursor: default;
+  font-size: 2em;
+}
+.puzzle .piece:hover {
+  border-style: dashed;
+}
+
+.puzzle.solved .piece:hover {
+  border-style: solid;
+}
+
+.puzzle .piece .number {
+  padding: 0 .25em;
+  text-shadow: 0 0 2px #999;
+}
+
+/* Controls */
+
+.puzzle .controls {
+  overflow: hidden;
+}
+
+.puzzle .controls .buttons {
+  cursor: default;
+  float: left;
+}
+.puzzle .controls .display {
+  cursor: default;
+  float: right;
+}
+
+/* Buttons */
+
+.puzzle .controls .buttons a {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+  border: solid 1px #999;
+  -webkit-border-radius: 1em;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  padding: .35em 1em .25em 1em;
+  margin-right: .75em
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+}
+.puzzle .controls .buttons a:hover {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#ccc));
+}
+.puzzle .controls .buttons a.toggle, 
+.puzzle .controls .buttons a.down {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbb), to(#ccc));
+}
+.puzzle .controls .buttons a.disabled {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+  color: #999;
+  cursor: default;
+}
+
+.puzzle .controls .buttons a.shuffle {
+  margin-right: 1em;
+}
+.puzzle .controls .buttons a.numbers {
+  -webkit-border-radius: 1em 0 0 1em;
+}
+.puzzle .controls .buttons a.original {
+  -webkit-border-radius: 0 1em 1em 0;
+}
+
+/* Display */
+
+.puzzle .controls .display input {
+  border: solid 1px #999;
+  -webkit-border-radius: 1em;
+  color: #333;
+  display: inline-block;
+  font: 1em 'Lucida Grande', 'Lucida Sans', 'Helvetica', 'Arial', sans-serif;
+  padding: .65em 1em .25em 1em;
+  margin: 0 .5em 0 1em;
+  width: 3em;
+  text-align: right;
+}
+.puzzle .controls .display.disabled input {
+  background-color: #eee;
+  color: #999;
+}
+
+.puzzle.solved .controls .display input {
+  background-color: #cfc;
+}
+
+/******************************************************************************/
+
+/* Params dialog */
+
+#dialog {
+  background-color: rgba(0,0,0,.75);
+  display: table;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2147483647;
+
+  display: none;
+}
+.waiting #dialog {
+  display: table;
+}
+#dialog > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+#dialog > div > div {
+  background-color: rgba(255,255,255,.95);
+  -webkit-border-radius: 1em;
+  -webkit-box-shadow: rgba(0,0,0,.75) 0 .15em 1em;
+  display: block;
+  margin: 0 auto;
+  padding: 2.5em 2em 2em 2em;
+  text-align: center;
+  width: 360px;
+}
+
+#dialog label,
+#dialog span {
+  font-family: 'Daniel', 'Lucida Grande', 'Lucida Sans', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.35em;
+  line-height: 1.75em;
+}
+#dialog label:after {
+  content: ': ';
+}
+
+#dialog input[type='range'] {
+  display: block;
+  margin: 1em auto 2em auto;
+  width: 100%;
+}
+
+#dialog input[type='submit'] {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+  border: 1px solid #999;
+  -webkit-border-radius: 1em;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font: 1em 'Lucida Grande', 'Lucida Sans', 'Helvetica', 'Arial', sans-serif;
+  padding: .6em 1em .5em 1em;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+}
+#dialog input[type='submit']:hover {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#ccc));
+}
+#dialog input[type='submit']:active {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbb), to(#ccc));
+}
+#dialog input[type='submit']:disabled {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+  color: #999;
+  cursor: default;
+}
+
