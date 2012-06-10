@@ -1,4 +1,4 @@
-# Puzzle for Google Chrome ![Still Maintained?](http://stillmaintained.com/unindented/puzzle-chrome.png)
+# Puzzle for Google Chrome
 
 Creates a sliding puzzle from any image. Just right-click on the image and select the *Puzzle for Chrome* option.
 
