@@ -1,0 +1,127 @@
+{
+  "locale": {
+    "message": "es"
+  },
+  "ext_name": {
+    "message": "Puzzle Creator"
+  },
+  "ext_description": {
+    "message": "Crea un puzle deslizante a partir de cualquier imagen. Simplemente haz click derecho sobre la imagen y selecciona la opción 'Puzzle Creator'."
+  },
+
+  "menu_puzzle": {
+    "message": "Crear puzle a partir de imagen"
+  },
+  "menu_puzzle_3x3": {
+    "message": "Crear puzle 3x3"
+  },
+  "menu_puzzle_4x4": {
+    "message": "Crear puzle 4x4"
+  },
+  "menu_puzzle_5x5": {
+    "message": "Crear puzle 5x5"
+  },
+  "menu_puzzle_custom": {
+    "message": "Crear puzle personalizado..."
+  },
+
+  "msg_header_about": {
+    "message": "Información..."
+  },
+
+  "msg_image_title": {
+    "message": "Imagen original"
+  },
+  "msg_image_state_loading": {
+    "message": "Cargando..."
+  },
+  "msg_image_state_finished": {
+    "message": "¡Terminado!"
+  },
+
+  "msg_pieces_title": {
+    "message": "Puzle"
+  },
+  "msg_pieces_error": {
+    "message": "No se pudo cargar la imagen. ¿Puede que el sitio $SITE$ haya bloqueado la petición?",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "msg_pieces_shuffle_button": {
+    "message": "Desordenar"
+  },
+  "msg_pieces_shuffle_prompt": {
+    "message": "¿Deseas desordenar las piezas?"
+  },
+  "msg_pieces_numbers_switch": {
+    "message": "Mostrar números"
+  },
+  "msg_pieces_original_switch": {
+    "message": "Mostrar original"
+  },
+  "msg_pieces_moves_label": {
+    "message": "$MOVES$ movimientos",
+    "placeholders": {
+      "moves": {
+        "content": "$1"
+      }
+    }
+  },
+  "msg_pieces_seconds_label": {
+    "message": "$SECONDS$ segundos",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+
+  "msg_settings_dialog_title": {
+    "message": "Dimensiones del puzle: $ROWS$x$COLS$",
+    "placeholders": {
+      "rows": {
+        "content": "$1"
+      },
+      "cols": {
+        "content": "$2"
+      }
+    }
+  },
+  "msg_settings_dialog_rows_label": {
+    "message": "Filas"
+  },
+  "msg_settings_dialog_cols_label": {
+    "message": "Columnas"
+  },
+  "msg_settings_dialog_submit_button": {
+    "message": "Crear"
+  },
+
+  "msg_about_dialog_author_label": {
+    "message": "Desarrollado con cariño por $AUTHOR$.",
+    "placeholders": {
+      "author": {
+        "content": "$1"
+      }
+    }
+  },
+  "msg_about_dialog_donate_label": {
+    "message": "Si esta extensión te ha sido de ayuda, ¿considerarías donar 5€ para apoyar mi trabajo en software libre y de código abierto?"
+  },
+  "msg_about_dialog_donate_url": {
+    "message": "https://paypal.me/unindented/5eur"
+  },
+  "msg_about_dialog_close_button": {
+    "message": "Cerrar"
+  },
+  "msg_about_dialog_donate_button": {
+    "message": "Donar 5€"
+  },
+
+  "msg_options_analytics_label": {
+    "message": "Enviar estadísticas de uso e informes sobre fallos anónimamente"
+  }
+}

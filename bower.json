@@ -1,0 +1,9 @@
+{
+  "name": "puzzle-creator",
+  "description": "Browser extension that creates a sliding puzzle from any image.",
+  "license": "GPL-3.0",
+  "private": true,
+  "dependencies": {
+    "chrome-platform-analytics": "^1.3.0"
+  }
+}

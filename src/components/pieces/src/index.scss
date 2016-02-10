@@ -1,0 +1,43 @@
+.app-pieces.mdl-card {
+  display: inline-block;
+  width: auto;
+  min-width: 760px;
+  min-height: 0;
+  margin: 0 0 48px;
+  overflow: visible;
+  text-align: start;
+}
+
+.app-pieces > .mdl-card__supporting-text {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.app-pieces > .mdl-card__actions {
+  position: relative;
+  display: flex;
+}
+
+.app-pieces > .mdl-card__actions > :first-child {
+  margin-right: auto;
+}
+
+.app-pieces__switch.mdl-switch {
+  width: auto;
+  margin-right: 36px;
+  margin-left: 12px;
+}
+
+.app-pieces__label {
+  display: inline-block;
+  height: 36px;
+  margin: 0 16px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+.app-pieces__spinner,
+.app-pieces__error {
+  color: $error-text-color;
+  text-align: center;
+}

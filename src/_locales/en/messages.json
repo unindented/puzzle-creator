@@ -1,0 +1,127 @@
+{
+  "locale": {
+    "message": "en"
+  },
+  "ext_name": {
+    "message": "Puzzle Creator"
+  },
+  "ext_description": {
+    "message": "Creates a sliding puzzle from any image. Just right-click on the image and select the 'Puzzle Creator' option."
+  },
+
+  "menu_puzzle": {
+    "message": "Create puzzle from image"
+  },
+  "menu_puzzle_3x3": {
+    "message": "Create 3x3 puzzle"
+  },
+  "menu_puzzle_4x4": {
+    "message": "Create 4x4 puzzle"
+  },
+  "menu_puzzle_5x5": {
+    "message": "Create 5x5 puzzle"
+  },
+  "menu_puzzle_custom": {
+    "message": "Create custom puzzle..."
+  },
+
+  "msg_header_about": {
+    "message": "About..."
+  },
+
+  "msg_image_title": {
+    "message": "Source image"
+  },
+  "msg_image_state_loading": {
+    "message": "Loading..."
+  },
+  "msg_image_state_finished": {
+    "message": "Finished!"
+  },
+
+  "msg_pieces_title": {
+    "message": "Puzzle"
+  },
+  "msg_pieces_error": {
+    "message": "Could not load image. Maybe the site $SITE$ blocked the request?",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "msg_pieces_shuffle_button": {
+    "message": "Shuffle"
+  },
+  "msg_pieces_shuffle_prompt": {
+    "message": "Do you want to shuffle the pieces?"
+  },
+  "msg_pieces_numbers_switch": {
+    "message": "Show numbers"
+  },
+  "msg_pieces_original_switch": {
+    "message": "Show original"
+  },
+  "msg_pieces_moves_label": {
+    "message": "$MOVES$ moves",
+    "placeholders": {
+      "moves": {
+        "content": "$1"
+      }
+    }
+  },
+  "msg_pieces_seconds_label": {
+    "message": "$SECONDS$ seconds",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+
+  "msg_settings_dialog_title": {
+    "message": "Puzzle dimensions: $ROWS$x$COLS$",
+    "placeholders": {
+      "rows": {
+        "content": "$1"
+      },
+      "cols": {
+        "content": "$2"
+      }
+    }
+  },
+  "msg_settings_dialog_rows_label": {
+    "message": "Rows"
+  },
+  "msg_settings_dialog_cols_label": {
+    "message": "Columns"
+  },
+  "msg_settings_dialog_submit_button": {
+    "message": "Create"
+  },
+
+  "msg_about_dialog_author_label": {
+    "message": "Developed with love by $AUTHOR$.",
+    "placeholders": {
+      "author": {
+        "content": "$1"
+      }
+    }
+  },
+  "msg_about_dialog_donate_label": {
+    "message": "If this extension has been useful to you, would you consider a gift of $$5 to support my work on free and open source software?"
+  },
+  "msg_about_dialog_donate_url": {
+    "message": "https://paypal.me/unindented/5usd"
+  },
+  "msg_about_dialog_close_button": {
+    "message": "Close"
+  },
+  "msg_about_dialog_donate_button": {
+    "message": "Donate $$5"
+  },
+
+  "msg_options_analytics_label": {
+    "message": "Send anonymized usage statistics and crash reports"
+  }
+}

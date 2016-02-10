@@ -1,0 +1,9 @@
+.app-about-dialog.mdl-dialog {
+  width: 384px;
+  color: $text-color-primary;
+  text-align: start;
+}
+
+.app-about-dialog .mdl-dialog__title {
+  @include typo-title($usePreferred: false);
+}
