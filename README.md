@@ -4,6 +4,8 @@
 
 Creates a sliding puzzle from any image. Just right-click on the image and select the *Puzzle Creator* option.
 
+![Right-click on an image...](src/assets/screenshot_small_1.png) ![And start playing!](src/assets/screenshot_small_2.png)
+
 
 ## Description
 
