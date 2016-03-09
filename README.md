@@ -1,3 +1,5 @@
+![Puzzle Creator](src/assets/promo_1400.png)
+
 # Puzzle Creator [![Build Status](https://img.shields.io/travis/unindented/puzzle-creator.svg)](http://travis-ci.org/unindented/puzzle-creator) [![Dependency Status](https://img.shields.io/gemnasium/unindented/puzzle-creator.svg)](https://gemnasium.com/unindented/puzzle-creator) [![Coverage Status](https://img.shields.io/coveralls/unindented/puzzle-creator.svg)](https://coveralls.io/r/unindented/puzzle-creator)
 
 Creates a sliding puzzle from any image. Just right-click on the image and select the *Puzzle Creator* option.
