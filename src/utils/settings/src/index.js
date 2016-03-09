@@ -1,3 +1,5 @@
+import {getItems, setItems} from 'utils/platform'
+
 export const minRows = 3
 export const maxRows = 9
 export const defaultRows = 3
@@ -6,31 +8,19 @@ export const minCols = 3
 export const maxCols = 9
 export const defaultCols = 3
 
-const defaults = {}
-
-export function removeSettings () {
-  try {
-    localStorage.removeItem('settings')
-  } catch (e) {
-  }
+const defaults = {
+  rows: defaultRows,
+  cols: defaultCols
 }
 
-export function loadSettings () {
-  let settings
-
-  try {
-    settings = JSON.parse(localStorage.getItem('settings'))
-  } catch (e) {
-    removeSettings()
-  }
-
-  return Object.assign({}, defaults, settings)
+export function defaultSettings () {
+  return defaults
 }
 
-export function saveSettings (settings) {
-  try {
-    localStorage.setItem('settings', JSON.stringify(Object.assign(loadSettings(), settings)))
-  } catch (e) {
-    removeSettings()
-  }
+export function loadSettings (callback) {
+  getItems(defaultSettings(), callback)
+}
+
+export function saveSettings (settings, callback) {
+  setItems(settings, callback)
 }

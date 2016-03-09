@@ -8,7 +8,7 @@ import SettingsDialog from 'components/settings-dialog'
 import AboutDialog from 'components/about-dialog'
 import {t} from 'utils/i18n'
 import {trackEvent, trackTiming, trackException} from 'utils/analytics'
-import {loadSettings, saveSettings} from 'utils/settings'
+import {defaultSettings, loadSettings, saveSettings} from 'utils/settings'
 import {validateProps} from 'utils/validate'
 
 import _styles from './index.scss'
@@ -18,7 +18,15 @@ export default class Foreground extends Component {
     location: PropTypes.any
   }
 
-  state = loadSettings()
+  constructor () {
+    super()
+
+    this.state = defaultSettings()
+
+    loadSettings(function (settings) {
+      this.setState(settings)
+    }.bind(this))
+  }
 
   @autobind
   handleAboutClick () {
