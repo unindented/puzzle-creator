@@ -6,7 +6,7 @@
     "message": "Puzzle Creator"
   },
   "ext_description": {
-    "message": "Creates a sliding puzzle from any image. Just right-click on the image and select the 'Puzzle Creator' option."
+    "message": "Creates a sliding puzzle from any image. Just right-click on the image and select the “Puzzle Creator” option."
   },
 
   "menu_puzzle": {
@@ -121,6 +121,9 @@
     "message": "Donate $$5"
   },
 
+  "msg_options_instructions_label": {
+    "message": "In order to use this extension, just right-click on an image, select the “Puzzle Creator” option, and choose the size of the puzzle."
+  },
   "msg_options_analytics_label": {
     "message": "Send anonymized usage statistics and crash reports"
   }

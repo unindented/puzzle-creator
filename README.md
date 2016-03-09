@@ -11,7 +11,7 @@ Creates a sliding puzzle from any image. Just right-click on the image and selec
 
 Take a quick break from work with this fun extension! Turn any image into a cool sliding puzzle!
 
-Just right click on the desired image, select the *Puzzle Creator* option, and choose the size of the puzzle.
+Just right-click on the desired image, select the *Puzzle Creator* option, and choose the size of the puzzle.
 
 A new tab will open, displaying the puzzle. Press the *Shuffle* button and start playing. It's that easy!
 
