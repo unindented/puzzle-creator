@@ -52,7 +52,7 @@
     "react-dom": "^15.0.2",
     "react-mdl": "^1.4.1",
     "react-motion": "^0.4.2",
-    "react-puzzle": "^0.2.1",
+    "react-puzzle": "^0.3.0",
     "react-router": "^2.0.0"
   },
   "devDependencies": {
