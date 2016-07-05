@@ -1,3 +1,4 @@
+import React from 'react'
 import SettingsDialog from 'components/settings-dialog'
 import {minRows, maxRows, defaultRows, minCols, maxCols, defaultCols} from 'utils/settings'
 import {render} from 'utils/test'

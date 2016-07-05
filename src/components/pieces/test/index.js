@@ -1,3 +1,4 @@
+import React from 'react'
 import Pieces from 'components/pieces'
 import {render} from 'utils/test'
 

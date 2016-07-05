@@ -1,4 +1,4 @@
-import {Component, PropTypes} from 'react'
+import React, {Component, PropTypes} from 'react'
 import {Card, CardTitle, CardText, CardActions, Spinner, Button, Switch} from 'react-mdl'
 import {SlidingPuzzle} from 'react-puzzle'
 import {autobind} from 'core-decorators'
