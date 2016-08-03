@@ -103,18 +103,18 @@ export default class Pieces extends Component {
     return (
       <Card className={classNames('app-pieces', {hidden: !isReady})} shadow={2}>
         <CardTitle>
-          <span className='visuallyhidden'>
+          <span className="visuallyhidden">
             {t('msg_pieces_title')}
           </span>
         </CardTitle>
         <CardText>
           {!loaded && !error && (
-            <div className='app-pieces__spinner'>
+            <div className="app-pieces__spinner">
               <Spinner />
             </div>
           )}
           {!loaded && !!error && (
-            <p className='app-pieces__error'>
+            <p className="app-pieces__error">
               {t('msg_pieces_error', host)}
             </p>
           )}
@@ -128,20 +128,20 @@ export default class Pieces extends Component {
         </CardText>
         <CardActions>
           <div>
-            <Button className='app-pieces__button' colored ripple
+            <Button className="app-pieces__button" colored ripple
               disabled={!loaded || !!error}
               onClick={this.handleClickShuffle}
             >
               {t('msg_pieces_shuffle_button')}
             </Button>
-            <Switch className='app-pieces__switch'
+            <Switch className="app-pieces__switch"
               checked={showNumbers}
               disabled={!loaded || !!solved || !!error}
               onChange={this.handleChangeNumbers}
             >
               {t('msg_pieces_numbers_switch')}
             </Switch>
-            <Switch className='app-pieces__switch'
+            <Switch className="app-pieces__switch"
               checked={showOriginal}
               disabled={!loaded || !!solved || !!error}
               onChange={this.handleChangeOriginal}
@@ -150,10 +150,10 @@ export default class Pieces extends Component {
             </Switch>
           </div>
           <div>
-            <span className='app-pieces__label'>
+            <span className="app-pieces__label">
               {t('msg_pieces_moves_label', moves)}
             </span>
-            <span className='app-pieces__label'>
+            <span className="app-pieces__label">
               {t('msg_pieces_seconds_label', seconds)}
             </span>
           </div>
