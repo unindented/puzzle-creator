@@ -33,11 +33,11 @@ export default class CustomImage extends Component {
     const state = (image ? 'finished' : 'loading')
 
     return (
-      <Card className="app-image hidden" shadow={2}
+      <Card className='app-image hidden' shadow={2}
         style={{backgroundImage: 'url(' + url + ')'}}
       >
         <CardTitle expand>
-          <span className="visuallyhidden">
+          <span className='visuallyhidden'>
             {t('msg_image_title')}
           </span>
         </CardTitle>
@@ -48,7 +48,7 @@ export default class CustomImage extends Component {
           />
         </CardText>
         <CardActions>
-          <span className="app-image__message">
+          <span className='app-image__message'>
             {t(`msg_image_state_${state}`)}
           </span>
         </CardActions>

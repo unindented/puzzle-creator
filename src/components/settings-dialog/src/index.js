@@ -53,36 +53,36 @@ export default class SettingsDialog extends Component {
     const isOpen = this.hasDialog() && !!open
 
     return (
-      <Dialog className="app-settings-dialog" open={isOpen}
+      <Dialog className='app-settings-dialog' open={isOpen}
         ref={this.handleDialogRef}
       >
-        <form method="get">
+        <form method='get'>
           <DialogTitle>
             {t('msg_settings_dialog_title', currentRows, currentCols)}
           </DialogTitle>
           <DialogContent>
-            <input type="hidden" name="url" value={btoa(url)} />
-            <div className="app-settings-dialog__field">
-              <label htmlFor="app-settings-dialog-rows">
+            <input type='hidden' name='url' value={btoa(url)} />
+            <div className='app-settings-dialog__field'>
+              <label htmlFor='app-settings-dialog-rows'>
                 {t('msg_settings_dialog_rows_label')}:
               </label>
-              <Slider id="app-settings-dialog-rows" name="rows"
+              <Slider id='app-settings-dialog-rows' name='rows'
                 min={minRows} max={maxRows} value={currentRows}
                 onChange={this.handleChangeRows}
               />
             </div>
-            <div className="app-settings-dialog__field">
-              <label htmlFor="app-settings-dialog-rows">
+            <div className='app-settings-dialog__field'>
+              <label htmlFor='app-settings-dialog-rows'>
                 {t('msg_settings_dialog_cols_label')}:
               </label>
-              <Slider id="app-settings-dialog-cols" name="cols"
+              <Slider id='app-settings-dialog-cols' name='cols'
                 min={minCols} max={maxCols} value={currentCols}
                 onChange={this.handleChangeCols}
               />
             </div>
           </DialogContent>
           <DialogActions>
-            <Button type="submit" colored raised ripple>
+            <Button type='submit' colored raised ripple>
               {t('msg_settings_dialog_submit_button')}
             </Button>
           </DialogActions>
