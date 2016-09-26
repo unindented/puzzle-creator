@@ -2,7 +2,7 @@
   "name": "puzzle-creator",
   "productName": "Puzzle Creator",
   "description": "Browser extension that creates a sliding puzzle from any image.",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "license": "GPL-3.0",
   "private": true,
   "author": {
