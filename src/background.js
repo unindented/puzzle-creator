@@ -1,6 +1,7 @@
 import {stringify} from 'querystring'
 import {t} from 'utils/i18n'
 import {createContextMenu, createTab, getExtensionUrl} from 'utils/platform'
+import {trackView} from 'utils/analytics'
 
 import _template from './background.html'
 
@@ -31,6 +32,8 @@ const init = () => {
   Object.keys(items).forEach((key) => (
     createCustomContextMenu(items[key], key)
   ))
+
+  trackView()
 }
 
 /* ************************************************************************** */
